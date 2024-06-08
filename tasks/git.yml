@@ -1,0 +1,4 @@
+- name: Install git
+  action: >
+    {{ ansible_pkg_mgr }} name=git
+  become: false
