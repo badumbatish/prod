@@ -1,0 +1,12 @@
+- name: Install zoxide
+  action: >
+    {{ ansible_pkg_mgr }} name=zoxide
+  become: false
+  tags:
+    - cli
+
+- name: Install atuin
+  shell: /bin/bash -c "$(curl --proto '=https' --tlsv1.2 -sSf https://setup.atuin.sh)"
+  become: false
+  tags:
+    - cli
