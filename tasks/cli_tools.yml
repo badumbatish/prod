@@ -1,6 +1,6 @@
-- name: Install zoxide
+- name: Install fzf
   action: >
-    {{ ansible_pkg_mgr }} name=zoxide
+    {{ ansible_pkg_mgr }} name=fzf
   become: false
   tags:
     - cli
