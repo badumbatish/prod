@@ -9,11 +9,6 @@
   tags:
     - zsh
 
-- name: Install Oh My Zsh
-  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-  tags:
-    - zsh
-
 - name: Install zsh plugin autosuggestions
   ansible.builtin.git:
     repo: https://github.com/zsh-users/zsh-autosuggestions.git

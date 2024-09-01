@@ -1,0 +1,11 @@
+- name: python3 
+  action: >
+    {{ ansible_pkg_mgr }} name=python3
+  become: false
+
+- name: javascript
+  action: >
+    {{ ansible_pkg_mgr }} name=nodejs,npm
+  become: false
+
+
