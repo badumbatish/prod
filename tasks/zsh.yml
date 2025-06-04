@@ -1,6 +1,6 @@
 - name: Install zsh
   action: >
-    {{ ansible_pkg_mgr }} name=zsh
+    {{ ansible_pkg_mgr }} name=zsh,zsh-autosuggestions,zsh-syntax-highlighting
   become: false
   tags:
     - zsh

@@ -1,12 +1,7 @@
 - name: Install fzf
   action: >
-    {{ ansible_pkg_mgr }} name=fzf
+    {{ ansible_pkg_mgr }} name=fzf,curl,xclip
   become: false
   tags:
     - cli
 
-- name: Install atuin
-  shell: /bin/bash -c "$(curl --proto '=https' --tlsv1.2 -sSf https://setup.atuin.sh)"
-  become: false
-  tags:
-    - cli
