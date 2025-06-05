@@ -1,6 +1,6 @@
 - name: Install fzf
   action: >
-    {{ ansible_pkg_mgr }} name=fzf,curl,xclip
+    {{ ansible_pkg_mgr }} name=fzf,curl,xclip,fd-find
   become: false
   tags:
     - cli

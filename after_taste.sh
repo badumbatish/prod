@@ -4,3 +4,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
+ln -s $(which fdfind) ~/.local/bin/fd
