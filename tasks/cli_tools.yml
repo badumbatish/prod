@@ -1,7 +1,11 @@
-- name: Install fzf
-  action: >
-    {{ ansible_pkg_mgr }} name=fzf,curl,xclip,fd-find
+- name: Install CLI tools
+  package:
+    name:
+      - fzf
+      - curl
+      - xclip
+      - fd-find
+      - ripgrep
   become: false
   tags:
     - cli
-
