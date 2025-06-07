@@ -4,8 +4,6 @@
       - fzf
       - curl
       - xclip
-      - fd-find
-      - ripgrep
   become: false
   tags:
     - cli
